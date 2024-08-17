@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord | Your Place To Talk and Hang Out</title>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="main.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="main.js" defer></script>
+</head>
+<body class="overflow-x-hidden antialiased">  
+      <!-- Mobile menu  -->
+      <div id="sideMenu" class="top-0 right-0 fixed bg-white w-0 z-50 h-full rounded-md transition-all duration-500 ">
+        <div class="p-5">
+          <!-- logo  -->
+          <div class="flex flex-row justify-between p-1 z-10 fill-black items-center">
+            <i class="fa-brands fa-discord text-4xl ">
+            </i>
+            <!-- <a href="#">
+              <button class="bg-[#fff] px-4 self-center p-2 text-[#2c2f33] rounded-full tex-[14px]">Open Discord</button>
+            </a> -->
+            
+            <i id="closeBtn" class="fa-sharp fa-solid fa-xmark text-3xl"></i>
+          </div>
+
+          <div class="border-t-[1px] border-gray-600  px-4 mx-2 mt-4"></div>
+
+          <ul class=" gap-y-5  font-[600] text-[20px] leading-[3] pt-6">
+            <li class="capitalize hover:underline  hover:bg-[#f6f6f6]  px-5">Download</li>
+            <li class="capitalize hover:underline hover:bg-[#f6f6f6]  px-5">nitro</li>
+            <li class="capitalize hover:underline hover:bg-[#f6f6f6]  px-5">discover</li>
+            <li class="capitalize   hover:bg-[#f6f6f6]  px-5 flex flex-row justify-between">
+               <p class="hover:underline">safely</p>
+               <p class="">></p>
+            </li>
+            <li class="capitalize hover:underline hover:text-[#404EED]  px-5">support</li>
+            <li class="capitalize hover:underline hover:text-[#404EED]  px-5">blog</li>
+            <li class="capitalize hover:underline hover:text-[#404EED]  px-5">carrers</li>
+          </ul>
+          <button class=" font-[500] w-full">
+            <a href="" class="flex flex-row items-center bg-[#5d69f1] hover:bg-[#404EED] text-white rounded-full justify-between px-10 p-3 bottom-14 absolute">
+              <i  class="fa-solid fa-download mr-2"></i></i>
+              <p class="mx-10">Download</p>
+            </a>
+          </button>
+       
+        </div>
+      </div>
+
+  <!-- navbar section -->
+    <nav class="bg-[#404EED]">
+
+      
+        <nav class="text-[#fff] max-w-[1200px] mx-auto flex justify-between h-[72px] items-center xl:px-0 px-7">
+            <!-- logo  -->
+            <div>
+                <img src="./images/logo.svg"  alt="">
+            </div>
+            <ul class="hidden lg:flex gap-5  font-[600] font-[16px]">
+                <li class="capitalize hover:underline">Download</li>
+                <li class="capitalize hover:underline">nitro</li>
+                <li class="capitalize hover:underline">discover</li>
+                <li class="capitalize hover:underline">safely</li>
+                <li class="capitalize hover:underline">support</li>
+                <li class="capitalize hover:underline">blog</li>
+                <li class="capitalize hover:underline">carrers</li>
+            </ul>
+            <!-- open discord  -->
+            <div class="flex flex-row gap-5 left-0">
+              <div class="">
+                <a href="#">
+                    <button class="bg-[#fff] px-2 self-center p-2 text-[#2c2f33] rounded-full font-[500] tex-[14px]">Open Discord</button>
+                </a>
+              </div>
+              <!-- Hambarger option  -->
+              <div  class="lg:hidden block">
+                <i id="menuBtn" class="fa-sharp fa-solid fa-bars text-[32px]"></i>
+              </div>
+              
+            </div>
+        </nav>
+    </nav>
+    
+    <!-- hero section  -->
+
+    <div class=" w-full relative -mt-1 bg-[#404EEF] min-h-[530px] overflow-hidden">
+       <img src="./images/Image0.svg" class="absolute bottom-0 z-10 top-auto hidden xl:block" alt="">
+       <img src="./images/Image1.svg" class="absolute bottom-0 z-10 -right-[12%] hidden xl:block" alt="">
+       <img src="./images/Image2.svg" class="absolute bottom-0 z-10 -left-[12%] hidden xl:block" alt="">
+       <div class="text-[#fff] flex flex-col max-w-[1200px] mx-auto text-center xl:px-0 px-7 xl:max-w-[770px] xl:h-[555px] gap-5 xl:pt-[120px]">
+            <h2 class="font-[800] text-left xl:text-center text-[34px] md:text-[56px] z-20">IMAGIN A PLACE...</h2>
+            <h4 class="font-[400] text-left  text-[16px] md:text-[20px] leading-[26px] md:leading-[34px] z-10 xl:self-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus
+             consectetur illo doloremque tenetur exercitationem voluptatem quam vol
+             uptas ea sint expedita! Lorem ipsum dolor sit amet. 
+            </h4>
+
+
+           <div class=" flex flex-col  xl:flex-row w-[81%] sm:w-[70%] md:w-[50%] xl:w-full px-2 md:px-7   md: gap-10 font-[500] z-20 xl:mx-auto mt-6">
+             <a href="#" class="bg-white text-black p-3 px-7 rounded-full hover:text-[#404EED]">
+              <p class="hidden xl:block">
+                <i class="fa-solid fa-download mr-2"></i></i>Download for windows
+              </p>
+              <p class="xl:hidden text-center md:text-center">
+                <i class="fa-solid fa-download mr-2"></i></i>Download from play store
+              </p>
+             </a>
+             <a href="#" class="bg-[#23272a] text-center md:text-center  text-white p-3 px-7 rounded-full">Open Discord in your browser</a>
+            </div>     
+
+          <!-- mobile tablet mode  -->
+           <!-- <div class="flex flex-col xl:hidden items-center z-20 gap-10 justify-start md:mx-auto">
+                <a href="" class="bg-white text-black p-3
+                  px-7 
+                  ] rounded-full hover:text-[#404EED] ">
+                  <p class=" hidden xl:block">
+                    <i class="fa-solid fa-download mr-2"></i></i> Download for windows
+                  </p>
+                  <p class=" xl:hidden">
+                    <i class="fa-solid fa-download mr-2"></i></i> Download from play stor
+                  </p>
+                
+                </a>
+                <a href="#" class="bg-[#23272a] text-white p-3   px-7 rounded-full">Open Discord in your browser</a>
+            </div> -->
+            <img src="./images/Image2.svg" class=" block md:hidden" alt="">
+            <div class="hidden md:flex xl:hidden mr-[-150px] justify-end">
+                <img src="./images/Image1.svg" class="w-[70%] " alt="">
+            </div>
+        </div>
+
+    </div>
+
+       <!-- hero section 2  -->
+    <div class="w-full bg-[#fff] relative">
+        <!-- content box  -->
+        <div class="flex flex-col lg:flex-row max-w-[1200px] mx-auto gap- items-center py-14 md:py-36 md:px-0 px-7">
+            <!-- left part  -->
+            <div class="w-full sm:w-[75%] xl:w-[50%]">
+              <img src="./images/section1Image.svg" alt="">
+            </div>
+            <!-- right par  -->
+           <div class=" hidden lg:flex md:w-[50%] ">
+                <div class="w-[95%] xl:w-[60%] flex flex-col mx-auto">
+                  <h1 class="font-[600] text-[20px] font-bold text-2xl leading-[24px] md:leading-[56.6px] sm:text-[28px] md:text-[48px] ">Create an invite-only place where you belong</h1>
+                  <p class="text-[16px] sm:text-[20px] font-[400] mt-[24px] ">Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing. Repellendus, corporis.</p>
+                </div>
+           </div>
+           <div class="w-full lg:hidden  ">
+            <div class="w-[95%] xl:w-[60%] flex flex-col mx-auto px-5">
+              <h1 class="font-[600] text-[30px] font-bold ">Create an invite-only place where you belong</h1>
+              <p class="text-[20px] sm:text-[20px] font-[400] mt-[24px] text-gray-700">Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing. Repellendus, corporis.</p>
+            </div>
+       </div>
+        </div>
+    </div>
+
+       <!-- hero section 3  -->
+    <div class="w-full bg-[#ece8e8] relative">
+        <!-- content box  -->
+        <div class="max-w-[1200px] mx-auto flex flex-col-reverse lg:flex-row items-center py-14 md:py-36 md:px-0 px-7">
+            <!-- left part  -->
+            <div class="hidden px-7 lg:block">
+               <h1 class="font-[600] text-[20px] font-bold text-2xl leading-[24px]">Lorem ipsum dolor sit amet.</h1>
+               <p class="text-[16px] font-[400] mt-[24px]">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque, necessitatibus.</p>
+            </div>
+            <div class="w-full px-7 lg:hidden">
+                <h1 class="font-[600] text-[20px] font-bold text-2xl leading-[24px]">Lorem ipsum dolor sit amet.</h1>
+                <p class="text-[16px] font-[400] mt-[24px]">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque, necessitatibus.</p>
+             </div>
+            <!-- right par  -->
+            <div class="">
+              <img src="./images/section2Image.svg" alt="">
+            </div>
+           
+       </div>
+    </div>
+    
+    <!-- hero section 4  -->
+    <div class="w-full bg-[#fff] relative">
+        <!-- content box  -->
+        <div class="flex flex-col lg:flex-row max-w-[1200px] mx-auto gap- items-center py-14 md:py-36 md:px-0 px-7">
+            <!-- left part  -->
+            <div class="w-full sm-[75%] xl:w-[50%]">
+              <img src="./images/section3Image.svg" alt="">
+            </div>
+            <!-- right par  -->
+           <div class=" hidden lg:flex md:w-[50%] ">
+                <div class="w-[95%] xl:w-[60%] flex flex-col mx-auto">
+                  <h1 class="font-[600] text-[20px] font-bold text-2xl leading-[24px] md:leading-[56.6px] sm:text-[28px] md:text-[48px] ">Create an invite-only place where you belong</h1>
+                  <p class="text-[16px] sm:text-[20px] font-[400] mt-[24px] ">Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing. Repellendus, corporis.</p>
+                </div>
+           </div>
+           <div class="w-full lg:hidden  ">
+            <div class="w-[95%] xl:w-[60%] flex flex-col mx-auto px-5">
+              <h1 class="font-[600] text-[30px] font-bold ">Create an invite-only place where you belong</h1>
+              <p class="text-[20px] sm:text-[20px] font-[400] mt-[24px] text-gray-700">Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing. Repellendus, corporis.</p>
+            </div>
+       </div>
+        </div>
+    </div>
+
+    <!-- hero section 5  -->
+    <div class="w-full bg-[#fff] relative">
+        <div class="flex flex-col max-w-[1200px] mx-auto text-center items-center py-14 md:pt-32 md:px-0 px-7">
+            <h1 class="text-[20px] font-bold text-2xl leading-[24px] md:leading-[56.6px] sm:text-[28px] md:text-[48px]">RELIABLE TECH FOR STAYING CLOSE</h1>
+            <p class="text-[16px] sm:text-[20px] font-[400] mt-[24px]">Low-latency voice and video feels like you’re in the same room. Wave hello over video, watch friends stream their games, or gather up and have a drawing session with screen share.</p>
+            <div class="w-[100%] ">
+                <img src="./images/section4Image.svg" class="w-[100%]" alt="">
+            </div>
+        </div>
+        <div class="relative w-[100%] font-[700] flex flex-col items-center gap-[30px]">
+            
+                <img src="./images/section5Image.svg" class="hidden md:block absolute top-0 text-[32px]" alt="">
+            
+            <h2 class="md:text-center leading-[30px] text-[32px]">Ready to start Journey?</h2>
+            <div class="hidden md:block">
+                <p class="text-white bg-[#404EEd] px-7 p-3 rounded-full justify-center">
+                    <i class="fa-solid fa-download mr-2"></i>Download for windows
+                </p>
+            </div>
+            <div class=" md:hidden">
+                <p class="text-white bg-[#404EEd] px-7 p-3 rounded-full justify-center">
+                    <i class="fa-solid fa-download mr-2"></i>Download for windows
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!--footer  -->
+    <div class="bg-[#23272a] mt-32 text-[#404EED]">
+        <div class="max-w-[1200px] mx-auto pt-24 flex flex-col gap-10 pb-10">
+            <!-- section 1  -->
+            <div class="flex flex-col gap-[40px] md:flex-row px-5 xl:gap[100px]">
+                <!-- left part  -->
+                <div class="flex flex-col gap-[24px] w-[100%] md:w-[50%] px-5">
+                  <h1 class="font-[800] text-[32px] leading-[30px]">IMAGIN A <br> PLACE</h1>
+                  <ul class="flex gap-7 text-white text-[23px] ">
+                    <li><i class="fa-brands fa-twitter"></i></li>
+                    <li><i class="fa-brands fa-instagram"></i></li>
+                    <li><i class="fa-brands fa-square-facebook"></i></li>
+                    <li><i class="fa-brands fa-youtube"></i></li>
+                  </ul>
+                </div>
+                <!-- right part  -->
+                <div class="md:w-[75%] flex justify-around flex-wrap">
+                  <div class="w-[50%] xl:w-fit">
+                      <h2 class="text-[16px] xl:py-[10px] py-[15px]">
+                          Products
+                      </h2>
+                      <ul class="flex flex-col gap-[10px] leading-[24px] font-[400] text-white">
+                        <li class="hover:underline">Download </li>
+                        <li class="hover:underline">Nitro</li>
+                        <li class="hover:underline">Status</li>
+                      </ul>
+                  </div>
+                  <div class="w-[50%] xl:w-fit">
+                    <h2 class="text-[16px] xl:py-[10px] py-[15px]">
+                        Products
+                    </h2>
+                    <ul class="flex flex-col gap-[10px] leading-[24px] font-[400] text-white">
+                      <li class="hover:underline">Download </li>
+                      <li class="hover:underline">Nitro</li>
+                      <li class="hover:underline">Status</li>
+                      <li class="hover:underline">Download </li>
+                      <li class="hover:underline">Nitro</li>
+                      
+                    </ul>
+                  </div>
+                  <div class="w-[50%] xl:w-fit">
+                    <h2 class="text-[16px] xl:py-[10px] py-[15px]">
+                      Products
+                    </h2>
+                    <ul class="flex flex-col gap-[10px] leading-[24px] font-[400] text-white">
+                      <li class="hover:underline">Download </li>
+                      <li class="hover:underline">Nitro</li>
+                      <li class="hover:underline">Status</li>
+                      <li class="hover:underline">Download </li>
+                      <li class="hover:underline">Nitro</li>
+                      <li class="hover:underline">Status</li>
+                      <li class="hover:underline">Download </li>
+                      <li class="hover:underline">Nitro</li>
+                      <li class="hover:underline">Status</li>
+                    </ul>
+                  </div>
+                  <div class="w-[50%] xl:w-fit">
+                    <h2 class="text-[16px] xl:py-[10px] py-[15px]">
+                      Products
+                    </h2>
+                    <ul class="flex flex-col gap-[10px] leading-[24px] font-[400] text-white">
+                      <li class="hover:underline">Download </li>
+                      <li class="hover:underline">Nitro</li>
+                      <li class="hover:underline">Status</li>
+                      <li class="hover:underline">Download </li>
+                      <li class="hover:underline">Nitro</li>
+                      <li class="hover:underline">Status</li>
+                      <li class="hover:underline">Download </li>
+                      
+                    </ul>
+                  </div>
+                </div>
+            </div>
+
+            <!-- section 2  -->
+            <div class="border-t-4 border-[#404EED]  px-7 mx-5">
+               
+            </div>
+            <!-- section 3  -->
+            <div class="flex flex-row justify-between px-2 sm:px-6 mx-3 sm:mx-5">
+              <img src="./images/logo.svg" alt="">
+              <button class="p-1 sm:p-3 bg-[#404EED] text-white rounded-full">Download</button>
+            </div>
+            <!-- <div class="px-7 mx-5 justify-between flex">
+              <img src="./images/logo.svg" alt="">
+              <button class="px-7 p-3 bg-[#404EED] text-white rounded-full">
+                Download
+              </button>
+            </div> -->
+        </div>
+    </div>
+</body>
+</html>
